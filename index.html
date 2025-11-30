@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>С Днём Матери</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #fff5fa;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    h1, h2 {
+        margin-top: 20px;
+        color: #c2185b;
+        font-weight: bold;
+    }
+
+    .flowers {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 60px;
+    }
+
+    .flower {
+        width: 120px;
+        height: 120px;
+        background: pink;
+        border-radius: 50%;
+        position: relative;
+        animation: bloom 3s ease-out forwards;
+        transform: scale(0);
+    }
+
+    .flower::before,
+    .flower::after {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        background: pink;
+        border-radius: 50%;
+    }
+
+    .flower::before {
+        top: -40px;
+        left: 0;
+    }
+
+    .flower::after {
+        top: 40px;
+        left: 0;
+    }
+
+    @keyframes bloom {
+        0% { transform: scale(0); }
+        60% { transform: scale(1.3); }
+        100% { transform: scale(1); }
+    }
+
+    .text {
+        margin-top: 50px;
+        font-size: 28px;
+        color: #ad1457;
+    }
+
+    .from {
+        margin-top: 10px;
+        font-size: 20px;
+        color: #6a1b9a;
+    }
+</style>
+</head>
+<body>
+
+<h1>🌸 С Днём Матери! 🌸</h1>
+
+<div class="flowers">
+    <div class="flower" style="background:#ffb3c6;"></div>
+    <div class="flower" style="background:#ff8fab;"></div>
+    <div class="flower" style="background:#ffc2d1;"></div>
+</div>
+
+<div class="text">С днём матери</div>
+<div class="from">от: Сабрины для: Нафисы</div>
+
+</body>
+</html>
